@@ -1,0 +1,52 @@
+{
+  "id": "back-to-school",
+  "theme": "back-to-school",
+  "layout": "layout-cards",
+  "greetingText": "Back to School!",
+  "message": "Lật từng mảnh ghép tri thức để sẵn sàng bứt phá cho một năm học rực rỡ.",
+  "background": "assets/images/backgrounds/bg-flame-tree.png",
+  "effects": {
+    "confetti": true,
+    "petals": true,
+    "balloons": true,
+    "sun": {
+      "position": "top-right",
+      "intensity": 1.5,
+      "rays": 24
+    },
+    "birds": true
+  },
+  "floaters": [
+    "📚",
+    "✏️",
+    "🎓",
+    "✨",
+    "💡",
+    "🎯",
+    "🚀",
+    "📖",
+    "🌱",
+    "🎒",
+    "🎧"
+  ],
+  "cards": [
+    {
+      "front": "🎯",
+      "back": "Tích tiểu thành đại: Dành 25 phút tập trung mỗi ngày hiệu quả hơn hẳn việc học dồn sát giờ thi."
+    },
+    {
+      "front": "💡",
+      "back": "Sự tò mò là chìa khóa: Đừng ngại đặt câu hỏi, tri thức thực sự luôn bắt đầu từ những thắc mắc."
+    },
+    {
+      "front": "🌿",
+      "back": "Sức khỏe là nền tảng: Giữ lối sống lành mạnh và ngủ đủ giấc để duy trì phong độ đường dài."
+    }
+  ],
+  "audio": {
+    "src": "assets/audio/bgm-celebration-brass.mp3",
+    "autoplay": true,
+    "loop": true,
+    "volume": 0.85
+  }
+}

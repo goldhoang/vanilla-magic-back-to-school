@@ -1,0 +1,26 @@
+body[data-theme="back-to-school"] {
+  --text: #ffffff;
+  --text-muted: #f1f5f9;
+  --accent: #ffd166;
+  --accent-soft: rgba(255, 209, 102, 0.45);
+  --stage-bg: #05140c;
+  --veil: rgba(5, 20, 12, 0.65);
+  --glow: rgba(255, 209, 102, 0.18);
+  --aurora: rgba(255, 255, 255, 0.12);
+  --letter: #0c2a1c;
+  --letter-accent: #ffd166;
+  --text-shadow:
+    -1px -1px 0 #04120a,
+    1px -1px 0 #04120a,
+    -1px 1px 0 #04120a,
+    1px 1px 0 #04120a,
+    0 2px 4px rgba(0, 0, 0, 0.85);
+  --layout-bg: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(10, 32, 20, 0.12) 45%,
+      rgba(5, 20, 12, 0.18) 100%);
+  --layout-border: 1px solid rgba(255, 255, 255, 0.15);
+  --layout-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  --layout-backdrop: blur(4px) saturate(120%);
+  --card-border: rgba(255, 209, 102, 0.2);
+}
