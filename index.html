@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vanilla Magic Pages — Back To School" />
+  <title>Vanilla Magic - Back To School</title>
+  <link rel="icon" id="favicon-icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/layouts.css" />
+</head>
+
+<body>
+  <div id="stage" class="stage" aria-live="polite">
+    <div class="stage__glow" aria-hidden="true"></div>
+    <div class="stage__aurora" aria-hidden="true"></div>
+    <canvas id="fx-ambient" class="stage__canvas" aria-hidden="true"></canvas>
+    <canvas id="fx-mid" class="stage__canvas stage__canvas--mid" aria-hidden="true"></canvas>
+    <div id="fx-stack" class="fx-stack" aria-hidden="true"></div>
+    <canvas id="fx-burst" class="stage__canvas stage__canvas--burst" aria-hidden="true"></canvas>
+    <div id="floaters" class="floaters is-hidden" aria-hidden="true"></div>
+
+    <main id="app-container" class="app-container"></main>
+
+    <p id="boot-status" class="boot-status">Đang mở trang magic…</p>
+
+    <button id="audio-toggle" class="audio-toggle" type="button" aria-pressed="false"
+      aria-label="Toggle background music">
+      <span class="audio-toggle__icon" aria-hidden="true"></span>
+      <span class="audio-toggle__text">Sound</span>
+    </button>
+  </div>
+  <audio id="bgm" preload="auto"></audio>
+
+  <template id="layout-cards">
+    <div class="layout layout-cards">
+      <p class="hero__brand"><a href="https://goldhoang.dev" target="_blank" rel="noopener noreferrer"
+          class="brand-link">
+          ✨ GoldHoang - Vanilla Magic
+        </a></p>
+      <p class="hero__tag" data-bind="occasion"></p>
+      <h1 class="hero__greeting hero__greeting--compact" data-bind="greeting"></h1>
+      <p class="hero__message" data-bind="message"></p>
+      <div class="card-grid" data-cards></div>
+    </div>
+  </template>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
