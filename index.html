@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +9,15 @@
   <link rel="icon" id="favicon-icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/themes.css" />
   <link rel="stylesheet" href="css/animation.css" />
   <link rel="stylesheet" href="css/layouts.css" />
 </head>
+
 <body>
   <div id="stage" class="stage" aria-live="polite">
     <div class="stage__glow" aria-hidden="true"></div>
@@ -28,7 +32,8 @@
 
     <p id="boot-status" class="boot-status">Đang mở trang magic…</p>
 
-    <button id="audio-toggle" class="audio-toggle" type="button" aria-pressed="false" aria-label="Toggle background music">
+    <button id="audio-toggle" class="audio-toggle" type="button" aria-pressed="false"
+      aria-label="Toggle background music">
       <span class="audio-toggle__icon" aria-hidden="true"></span>
       <span class="audio-toggle__text">Sound</span>
     </button>
@@ -37,7 +42,10 @@
 
   <template id="layout-cards">
     <div class="layout layout-cards">
-      <p class="hero__brand">Vanilla Magic Pages</p>
+      <p class="hero__brand"><a href="https://goldhoang.dev" target="_blank" rel="noopener noreferrer"
+          class="brand-link">
+          ✨ GoldHoang - Vanilla Magic
+        </a></p>
       <p class="hero__tag" data-bind="occasion"></p>
       <h1 class="hero__greeting hero__greeting--compact" data-bind="greeting"></h1>
       <p class="hero__message" data-bind="message"></p>
@@ -47,4 +55,5 @@
 
   <script src="js/app.js"></script>
 </body>
+
 </html>

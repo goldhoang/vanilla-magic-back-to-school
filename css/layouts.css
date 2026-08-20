@@ -96,6 +96,22 @@
   transform: rotateY(180deg);
 }
 
+.brand-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.brand-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px var(--accent);
+  transform: translateY(-1px);
+}
+
 @media (max-width: 560px) {
   .card-grid {
     grid-template-columns: 1fr;
